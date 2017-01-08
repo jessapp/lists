@@ -92,15 +92,12 @@ def smallest_int(numbers):
         True
     """
 
-    smallest = numbers[0]
-
     for num in numbers:
-        if smallest == None:
+        if numbers == "[]":
             return None
-        elif num < smallest:
-            smallest = num
-
-    return smallest
+        else:
+            sorted_numbers = sorted(numbers)
+            return sorted_numbers[0]
 
 
 def largest_int(numbers):
@@ -122,13 +119,12 @@ def largest_int(numbers):
         True
     """
 
-    largest = numbers[0]
-
     for num in numbers:
-        if num > largest:
-            largest = num
-
-    return largest
+        if numbers == "[]":
+            return None
+        else:
+            sorted_numbers = sorted(numbers)
+            return sorted_numbers[-1]
 
 
 def halvesies(numbers):

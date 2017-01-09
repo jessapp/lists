@@ -353,6 +353,8 @@ def reverse_list_in_place(items):
         ['I', 'love', 'cookies']
     """
 
+# Had issues with this one - skipped ahead 
+
     for i in range(len(items)/2):
         items[i], items[len(items)-1-i] = items[len(items)-1-i], items[i]
 
@@ -421,6 +423,8 @@ def find_letter_indices(words, letter):
     ("o" does not appear in "jumps", so the result for that input is
     `None`.)
     """
+
+# Had trouble with this one - skipped ahead to assessment
 
     indices = []
 
